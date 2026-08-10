@@ -1,3 +1,6 @@
+#include<iostream>
+#include<vector>
+using namespace std;
 vector<int> nextGreaterNaive(vector<int>& arr) {
     int n = arr.size();
     vector<int> result(n);
@@ -12,4 +15,12 @@ vector<int> nextGreaterNaive(vector<int>& arr) {
         }
     }
     return result;
+}
+int main(){
+vector<int> arr={4,5,2,25};
+vector<int> result = nextGreaterNaive(arr);
+for (int x : result) {
+    cout << x << " ";
+}
+return 0;
 }
