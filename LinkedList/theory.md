@@ -23,3 +23,13 @@ Node(int val){
   next=nullptr;
 }
 };
+
+DOUBLY LINKED LIST
+A Doubly Linked List (DLL) has nodes with two pointers: next (forward) and prev (backward). This lets you traverse in both directions, and makes deletion easier (no need to track "previous node" separately — it's already stored!).
+Node Structure :-
+struct DNode {
+    int data;
+    DNode* next;
+    DNode* prev;
+    DNode(int val) { data = val; next = nullptr; prev = nullptr; }
+};
